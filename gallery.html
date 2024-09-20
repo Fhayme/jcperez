@@ -1,0 +1,165 @@
+<html>
+<body style="background-color:#333333">
+
+<head>
+<style>
+a:link, a:visited {
+  background-color: white;
+  color: black;
+  border: 2px blue;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: #0066cc;
+  color: white;
+}
+</style>
+</head>
+    
+    
+    
+<h1 style="font-color:b3b3b3">Gallery</h1>
+
+<a href="file:///home/chronos/u-bc284639e78d2612cf5d93a790f35f2438842543/MyFiles/TLE%20peta/TLE%20Project/index.html">Home</a>&nbsp&nbsp&nbsp
+<a href="file:///home/chronos/u-bc284639e78d2612cf5d93a790f35f2438842543/MyFiles/TLE%20peta/TLE%20Project/about.html">About</a>&nbsp&nbsp&nbsp
+<a href="file:///home/chronos/u-bc284639e78d2612cf5d93a790f35f2438842543/MyFiles/TLE%20peta/TLE%20Project/contacts.html">Contacts</a>&nbsp&nbsp&nbsp
+<a href="file:///home/chronos/u-bc284639e78d2612cf5d93a790f35f2438842543/MyFiles/TLE%20peta/TLE%20Project/resume.html">Resume</a>&nbsp&nbsp&nbsp
+<a href="file:///home/chronos/u-bc284639e78d2612cf5d93a790f35f2438842543/MyFiles/TLE%20peta/TLE%20Project/snake.html">Snake</a>
+<hr>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 750px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #000000;
+  font-size: 20px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/4s etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 30px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
+</head>
+<body>
+
+<Center><h2 style="font-color:b3b3b3">Automatic Slideshow</h2></Center>
+
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 4</div>
+  <img src="gido.jpeg" style="width:100%;">
+  <div class="text">Mi amigo</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 4</div>
+  <img src="classmates.jpeg" style="width:100%">
+  <div class="text">10-bryce group photo</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 4</div>
+  <img src="kiddiecrew.jpg" style="width:100%">
+  <div class="text">mcdo kiddie crew</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 4</div>
+  <img src="cat.jpg" style="width:100%">
+  <div class="text">some cats that came to our house</div>
+</div>
+  
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+</div>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); // Change image every 3 seconds
+}
+</script>
+    
+</body>
+</html>
